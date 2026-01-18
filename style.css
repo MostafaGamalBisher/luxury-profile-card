@@ -67,6 +67,44 @@ body {
     #0b0b0b 100%
   );
 }
+.gold {
+  /* display: none; */
+}
+
+.gold_bar {
+  position: absolute;
+  color: red;
+  top: 3rem;
+  right: 3rem;
+}
+
+.gold_bar-img {
+  width: 3rem;
+  height: 3rem;
+}
+
+@keyframes sparkel {
+  0% {
+    box-shadow: 0 0 5rem var(--color-text);
+  }
+  25% {
+    box-shadow: 0 0 10rem var(--color-text);
+  }
+  50% {
+    box-shadow: 0 0 20rem var(--color-text);
+  }
+  75% {
+    box-shadow: 0 0 30rem var(--color-text);
+  }
+  100% {
+    box-shadow: 0 0 100rem var(--color-text);
+  }
+}
+
+.container:has(.gold:checked) .card {
+  animation: sparkel 0.9s infinite alternate;
+}
+
 /* End container */
 
 /* Card */
