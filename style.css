@@ -68,7 +68,7 @@ body {
   );
 }
 .gold {
-  /* display: none; */
+  display: none;
 }
 
 .gold_bar {
